@@ -1,67 +1,84 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="template initial" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <script src="scripts/validaciones.js"></script>
+    <title>Contacto</title>
+  </head>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="template initial">
-        <link rel="stylesheet" href="estilos/style.css">
-        <script src="scripts/actions.js"></script> 
-        <title>Contacto</title>
-    </head>
+  <body>
+    <header id="hd-cabecera">
+      <h1>Contacto</h1>
+    </header>
+    <hr />
 
-    <body>
+    <nav id="nav-navegacion">
+      <ul ls-navegacion>
+        <li id="link-nav"><a href="index.html">Inicio</a></li>
+        <li id="link-nav"><a href="estudios.html">Estudios</a></li>
+        <li id="link-nav"><a href="pasatiempos.html">Pasatiempos</a></li>
+        <li id="link-nav"><a href="proyectos.html">Proyectos</a></li>
+        <li id="link-nav"><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
 
-        <header id="hd-cabecera">
+    <hr />
 
-            <h1>Contacto</h1>
+    <section id="section-contenido">
+      <article id="article-5">
+        <p>Para contactarme por favor llenar los datos.</p>
 
-        </header>
-        <hr>
-        
-        <nav id="nav-navegacion">
-            
-            <ul ls-navegacion>
-                <li id="link-nav"><a href="index.html">Inicio</a></li>
-                <li id="link-nav"><a href="estudios.html">Estudios</a></li>
-                <li id="link-nav"><a href="pasatiempos.html">Pasatiempos</a></li>
-                <li id="link-nav"><a href="proyectos.html">Proyectos</a></li>
-                <li id="link-nav"><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <section>
+            <form id="form-contacto" method="post">
+              <div>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required /><br>
+              </div>
+              <div>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required /><br>
+              </div>
+              <div>
+                <label for="subject">Asunto:</label><br>
+                <input type="text" id="subject" name="subject" required /><br>
+              </div>
+              <div>
+                <label for="message">Mensaje:</label><br>
+                <textarea
+                  rows="7"
+                  type="text"
+                  id="message"
+                  value="Mensaje"
+                  name="message"
+                  required
+                ></textarea><br>
+              </div>
+              <div>
+                  <input id="btn-input" type="submit" value="Enviar" /><br>
+              </div>
+            </form>
+          </section>
+      </article>
+    </section>
+    
+    <hr />
 
-        </nav>
+    <footer id="footer-redes">
+      <h4>Copyrigth 2023 - Universidad del Cauca</h4>
+      <h4>Popayan - Cauca</h4>
 
-        <hr>
-
-        <section id="section-contenido">
-       
-            <article id="article-5">
-                
-                <p>Para contactarme por favor llenar los datos.</p>
-
-                <form id="form-contacto" action="">
-                    <label for="txt-nombre">Nombre: </label><br>
-                    <input type="text" id="txt-nombre"><br>
-                    <label for="txt-correo">Correo:</label><br>
-                    <input type="text" id="txt-correo"><br><br>
-                    <label for="txt-mensaje">Mensaje:</label><br>
-                    <textarea rows="7" type="text" id="txt-mensaje" value="Mensaje"></textarea>
-                    <input id="btn-input" type="submit" value="Enviar">
-                </form>
-
-            </article>
-       
-        </section>
-
-        <hr>
-        
-        <footer id="footer-redes">
-            <h4>Copyrigth 2023 - Universidad del Cauca</h4>
-            <h4>Popayan - Cauca</h4>
-
-            <a href="https://www.facebook.com/Kevin.Stiven.co"><img src="archivos/facebook.png" alt="Facebook" width="2%"></a>
-            <a href="https://twitter.com/Stiven172001"><img src="archivos/twitter.png" alt="Twitter" width="2%"></a>
-            <a href="https://www.instagram.com/stiven1707/"><img src="archivos/instagram.png" alt="Instagram" width="2%"></a>
-        </footer>
-
-    </body>
+      <a href="https://www.facebook.com/Kevin.Stiven.co"
+        ><img src="archivos/facebook.png" alt="Facebook" width="2%"
+      /></a>
+      <a href="https://twitter.com/Stiven172001"
+        ><img src="archivos/twitter.png" alt="Twitter" width="2%"
+      /></a>
+      <a href="https://www.instagram.com/stiven1707/"
+        ><img src="archivos/instagram.png" alt="Instagram" width="2%"
+      /></a>
+    </footer>
+  </body>
+</html>
